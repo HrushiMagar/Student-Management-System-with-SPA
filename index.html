@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single Page App</title>
+    <link rel="stylesheet" href="spa.css">
+</head>
+<body>
+    <main>
+        <div class="page active" id="home">
+            <h1>Home</h1>
+            <ol>
+                <li><a href="#" data-target="home" class="nav-link">HOME</a></li>
+                <li><a href="#" data-target="list" class="nav-link">LIST</a></li>
+                <li><a href="#" data-target="detail" class="nav-link">DETAIL</a></li>
+            </ol>
+            <p>Welcome to the student management system.</p>
+        </div>
+
+        <div class="page" id="list">
+            <h1>List</h1>
+            <ol>
+                <li><a href="#" data-target="home" class="nav-link">HOME</a></li>
+                <li><a href="#" data-target="list" class="nav-link">LIST</a></li>
+                <li><a href="#" data-target="detail" class="nav-link">DETAIL</a></li>
+            </ol>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Roll No.</th>
+                        <th>Name</th>   
+                        <th>Subjects</th>
+                        <th>Marks</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Hrushi Magar</td>
+                        <td>Math, Science, English</td>
+                        <td>75, 85, 78</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Saurabh Magar</td>
+                        <td>Math, Science, English</td>
+                        <td>82, 79, 88</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Akash Kale</td>
+                        <td>Math, Science, English</td>
+                        <td>58, 62, 54</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="page" id="detail">
+            <h1>Detail</h1>
+            <ol>
+                <li><a href="#" data-target="home" class="nav-link">HOME</a></li>
+                <li><a href="#" data-target="list" class="nav-link">LIST</a></li>
+                <li><a href="#" data-target="detail" class="nav-link">DETAIL</a></li>
+            </ol>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Roll No.</th>
+                        <th>Name</th>
+                        <th>Pass/Fail</th>
+                        <th>Remarks</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Hrushi Magar</td>
+                        <td>Pass</td>
+                        <td>Good performance</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Saurabh Magar</td>
+                        <td>Pass</td>
+                        <td>Excellent performance</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Akash Kale</td>
+                        <td>Fail</td>
+                        <td>Needs improvement in Math and Science</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <script src="spa.js"></script>
+</body>
+</html>
